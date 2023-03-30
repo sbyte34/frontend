@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/faviconimg.png">
+
+    <!-- Bootstrap CSS -->
+    {{!--
+    <link rel="stylesheet" href="css/bootstrap.min.css"> --}}
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    {{!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"> --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <a href="https://wa.me/9518330346?text=" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    {{!--
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    {{!--
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> --}}
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>SmartByte</title>
+</head>
+
+<body>
+    {{>navbaar}}
+    {{!-- section one image and registration page --}}
+    <div class="container-fluid">
+        <div class="row no-gutters shadow-lg">
+            <div class="col-md-6 d-md-block">
+                <img src="/static/images/image1.jpg" class="img-fluid"
+                    style="min-height:70%; border-radius: 15px; margin-top:60px;" />
+            </div>
+            <div class="col-md-6 bg-white p-5">
+
+
+
+                <div class="form-style">
+                    <form class="p-lg-2 col-12 row g-3" action="https://formspree.io/f/xbjbwnza" method="post">
+                        <div class="col-lg-6">
+                            <label for="userName" class="form-label">First name</label>
+                            <input type="text" class="form-control" placeholder="Ex.Divya" name="firstname" id="fName"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="userName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" placeholder="Ex.Banode" name="lastname" id="lName"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-12">
+                            <label for="userName" class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="divyabanode@example.com" name="email"
+                                id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-12">
+                            <label for="userName" class="form-label">Contact Number</label>
+                            <input type="number" class="form-control" placeholder="+91 12345 67890" name="phno" id="cno"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-12">
+                            <label for="exampleInputEmail1" class="form-label">Write Enquiry</label>
+                            <textarea name="textarea" placeholder="Enquiry" class="form-control" name="massage" id="msg"
+                                rows="4"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-brand">Send Enquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- courses card used sliderbar --}}
+    {{>slider slides=slides}}
+    {{>branch br_name=br_name}}
+    {{!-- aboutus page --}}
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="intro">
+                    <h6>ABOUT US</h6>
+                    <h1>Are Feature</h1>
+                    <p class="mx-auto">Description</p>
+                </div>
+                <div class="col-lg-5 py-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="info-box">
+                                <img src="/static/images/.jpg" alt="">
+                                <div class="ms-4">
+                                    <h5>Experts Trainer</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Gov Authorize Training Center</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Mini Project</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="http://drive.google.com/uc?export=view&id=1Br8SHXRVpfC86GLo5c9qLRf079aKFnFN"
+                        alt="aboutimg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MILESTONE -->
+    <section id="milestone">
+        <div class="container">
+            <div class="row text-center justify-content-center gy-4">
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">90K+</h1>
+                    <p class="mb-0">Happy Clients</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">45M</h1>
+                    <p class="mb-0">Lines of code</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">190</h1>
+                    <p class="mb-0">Total reviews</p>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <h1 class="display-4">380K</h1>
+                    <p class="mb-0">Enrolled</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{!-- servicesPage --}}
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Our Services</h6>
+                        <h1>What We Do?</h1>
+                        <p class="mx-auto">what services we provide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/.png" alt="">
+                        <h5>Training</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/.png" alt="">
+                        <h5>Internship</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/.png" alt="">
+                        <h5>WorkShop</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/.png" alt="">
+                        <h5>Guest Lecture</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/.png" alt="">
+                        <h5>Seminar</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="img/.png" alt="">
+                        <h5>Placement Assistance</h5>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{!-- activity page --}}
+    <section class="bg-light" id="activity">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Activities</h6>
+                        <h1>What's New ?</h1>
+                        <p class="mx-auto">showing seminar, activities, workshop etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="owl-slider">
+            <div id="projects-slider" class="owl-carousel">
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="static/images/groupD.jpg" alt="">
+                    <div class="content">
+                        <h2>Seminar</h2>
+                        <h6>Website Design</h6>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="static/images/rob.png" alt="">
+                    <div class="content">
+                        <h2>Learn How To Bulid Your Robot</h2>
+                        <h6>robotics</h6>
+                    </div>
+
+                </div>
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="static/images/rob.png" alt="">
+                    <div class="content">
+                        <h2>Group Discussion</h2>
+                        <h6>Activities</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative" style="margin-top:15px;">
+                <div class="position-absolute bottom-10 start-50 translate-middle-x">
+                    <button type="button" class="btn btn-brand">See more</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    {{!-- team division --}}
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Team</h6>
+                        <h1>Team Members</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="static/images/rob.png" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Yesh Mohite</h5>
+                        <p>Marketing Coordinator</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="static/images/rob.png" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Kathryn Murphy</h5>
+                        <p>Ethical Hacker</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="static/images/rob.png" alt="">
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>Divya Banode</h5>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{!-- testimonals --}}
+    <section class="bg-light" id="reviews">
+        <div class="intro">
+            <h6>Testimonals</h6>
+            <div class="owl-carousel reviews-slider container">
+                <div class="review">
+                    <div class="person">
+                        <img src="static/images/rob.png" alt="">
+                        <h5>Divya banode</h5>
+                        <small>full stack Developer</small>
+                    </div>
+                    <h3>Comment:-Write few lines</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                    <i class='bx bxs-quote-alt-left'></i>
+                </div>
+                <div class="review">
+                    <div class="person">
+                        <img src="static/images/rob.png" alt="">
+                        <h5>Ralph Edwards</h5>
+                        <small>Market Development Manager</small>
+                    </div>
+                    <h3>Comment:-Write few lines</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                    <i class='bx bxs-quote-alt-left'></i>
+                </div>
+                <div class="review">
+                    <div class="person">
+                        <img src="static/images/rob.png" alt="">
+                        <h5>Jonny</h5>
+                        <small>Market Development Manager</small>
+                    </div>
+                    <h3>Comment:-Write few lines</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                    <i class='bx bxs-quote-alt-left'></i>
+                </div>
+    </section>
+    {{!-- socialwork cards --}}
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Social-Work</h6>
+                        <h1>Social Work</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/.jpg" alt="">
+                        <!-- <a href="#" class="tag"></a> -->
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>social work</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/.jpg" alt="">
+                        <!-- <a href="#" class="tag"></a> -->
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>social work</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/.jpg" alt="">
+                        <!-- <a href="#" class="tag"></a> -->
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>social work</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative" style="margin-top:15px;">
+            <div class="position-absolute bottom-10 start-50 translate-middle-x">
+                <button type="button" class="btn btn-brand">See more</button>
+            </div>
+        </div>
+
+    </section>
+    {{!-- footerpage --}}
+    <footer>
+        <div class="footer-top text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="navbar-brand">SmartByte<span class="dot">.</span></h4>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                        <div class="col-auto social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="col-auto conditions-section">
+                            <a href="#">privacy</a>
+                            <a href="#">terms</a>
+                            <a href="#">disclaimer</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <h6 style="text-align:center; color:white;">Copyright 2022. All rights Reserved</h6>
+            <h6 style="color:white;">Distributed By:-&nbsp;&nbsp;&nbsp;<a href="http://smartbytecommittee.com"
+                    style="text-decoration:none; color:white">SmartByte Computer Education</a></h6>
+        </div>
+    </footer>
+    
+    <!-- card -->
+    {{!-- <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">COURSES</h5>
+        </div>
+       
+      <div class="modal-body" id="subcard">
+        
+        
+        {{#each slides}}
+                            <div class="card col-lg-3">
+                                <img class="card-img-top" src="{{this.imgURl}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{this.title}}</h5>
+                                    <p class="card-text">{{this.subTitle}}</p>
+                                    <div>
+                                        <span style="font-size:20px; text-align:right;">
+                                            <h6><a href="./details" style="text-decoration:none;">Learn
+                                                    more</a>&nbsp;&nbsp;
+                                                <a href="#exampleModal" data-bs-toggle="modal" style="text-decoration:none;">Enroll</a>
+                                            </h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+      </div>
+      
+      
+    </div>
+  </div>
+</div> --}}
+{{!-- card modal --}}
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width:1290px;" >
+            <div class="modal-content">
+                    <h1 style="text-align:center;">COURSES</h1>
+                        <div class="card-center mt-2 modalcard">
+                        <div class="col-xs-12 col-sm-12 col-md-12  item" id="subcard">
+                            {{#each slides}}
+                            <div class="card col-lg-2">
+                                <img class="card-img-top" src="{{this.imgURl}}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{this.title}}</h5>
+                                    <p class="card-text">{{this.subTitle}}</p>
+                                    <div>
+                                        
+                                        
+                                            <span style="font-size:20px; text-align:right;">
+                                            <h6>
+                                                {{!-- <a href="/" style="text-decoration:none;">
+                                                <img src="static/images/backbutton.png" style="height:15px; width:15px; left:1px">Back</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --}}
+                                                <a href="./details" style="text-decoration:none;">Learn
+                                                    more</a>&nbsp;&nbsp;
+                                                <a href="#exampleModal" data-bs-toggle="modal" style="text-decoration:none;">Enroll</a>
+                                            </h6>
+                                        </span>
+                                        <span class="backbtn" style="font-size:20px; text-align:right;">
+                                            <h6>
+                                                <a href="/" style="text-decoration:none;">
+                                                <img src="static/images/backbutton.png" style="height:15px; width:15px; left:1px">Back</a>
+                                            </h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+            </div>
+          
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    {{!-- JavasriptCDN link --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/slider.js"></script>
+</body>
+
+</html>

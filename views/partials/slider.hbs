@@ -1,0 +1,65 @@
+<section class="bg-light" id="courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="intro">
+                    <h6>courses</h6>
+                    <h1>Our courses</h1>
+                    <p class="mx-auto">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="owl-slider">
+        <div id="carousel" class="owl-carousel">
+            {{#each slides}}
+            <div class="item">
+
+                <div class="card">
+                    <img class="card-img-top" src="{{this.imgURl}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{this.title}}</h5>
+                        <p class="card-text">{{this.subTitle}}</p>
+                        <div>
+                            <span style="font-size:20px; text-align:right;">
+                                <h6><a href="../details" style="text-decoration:none;">Learn more</a>&nbsp;&nbsp;
+                                    {{!-- <a href="#" style="text-decoration:none;">Enroll</a> --}}
+                                     <a href="#exampleModal" data-bs-toggle="modal" style="text-decoration:none;">Enroll</a>
+                                </h6>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    {{!-- seemore button code --}}
+    <div class="position-relative">
+        <div class="position-absolute bottom-10 start-50 translate-middle-x">
+            <!-- <button type="button" class="btn btn-brand"><a herf="">See more</a></button> -->
+            {{!-- <a href="/views/partials/courseCard.hbs" class="btn btn-brand" role="button">See
+                more</a> --}}
+            <a href="#myModal" data-bs-toggle="modal" 
+                    class="btn btn-brand ms-lg-3">See More</a>
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    </div>
+
+    </div>
+</section>

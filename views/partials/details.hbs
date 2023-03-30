@@ -1,0 +1,40 @@
+<div class="testimonial-slider mt-5">
+  <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <center>
+            <h1><strong>Testimonials</strong></h1>
+          </center><br>
+          <p style="margin:auto; text-align:center; max-width:800px; font-size:16px;">
+            Autodice has ensured a premium quality Hands-on experience for students to learn, access and solve any Real
+            life Technological problems.<br><br>
+
+            Listen to what our students have to say...
+          </p>
+
+          <div class="owl-slider">
+            <div id="carousel" class="owl-carousel">
+              {{#each detailsPage}}
+              <div class="item">
+
+                <div class="card">
+                  <img class="card-img-top" src="{{this.imgURl}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">{{this.subTitle}}</p>
+
+                  </div>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
